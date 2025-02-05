@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: pink;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+#revealButton {
+    padding: 10px 10px;
+    font-size: 16px; /* Ditingkatkan agar lebih mudah dibaca */
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: background 0.3s;
+}
+
+#revealButton:hover {
+    background: pink;
+}
+
+#idn {
+padding: 10px 10px;
+    font-size: 16px; /* Ditingkatkan agar lebih mudah dibaca */
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+#heartContainer {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Bentuk hati */
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0 auto;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: -50px;
+    top: 0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#psn {
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+#clik {
+padding: 10px 10px;
+    font-size: 16px; /* Ditingkatkan agar lebih mudah dibaca */
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#vvl {
+  height: 300px;
+  width: 300px;
+  border-radius: 80px;
+}
+
+#yww {
+  color:red;
+}
+
+#kl {
+padding: 10px 10px;
+    font-size: 16px; /* Ditingkatkan agar lebih mudah dibaca */
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#bdy {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.album-cover img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.song-info h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.song-info p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.controls button:hover {
+    color: pink;
+}
+
+.progress-container {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 5px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: pink;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
